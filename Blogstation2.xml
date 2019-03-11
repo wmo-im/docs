@@ -87,7 +87,7 @@
                             <om:phenomenonTime xlink:type="simple"/>
                             <om:resultTime xlink:type="simple"/>
                             <om:procedure xlink:type="simple">
-<wmdr:Process gml:id="id-obs1_proc">
+<wmdr:Process gml:id="id-obs2_proc">
     <gml:boundedBy xsi:nil="true"/>
     <wmdr:deployment xlink:type="simple">
         <wmdr:Deployment gml:id="id-obs2_dep1">
