@@ -87,7 +87,7 @@
 <wmdr:Process gml:id="id-obs1_proc">
     <wmdr:deployment>
         <wmdr:Deployment gml:id="id-obs1_dep1">
-		    <wmdr:dataGeneration xlink:type="simple"/>
+		    <wmdr:dataGeneration/>
             <wmdr:validPeriod/>
             <wmdr:localReferenceSurface/>
             <wmdr:applicationArea/>
