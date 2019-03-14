@@ -4,9 +4,9 @@
         <wmdr:Header/>
     </wmdr:headerInformation>
     <wmdr:facility>
-        <wmdr:ObservingFacility gml:id="_0-20000-0-testblog">
-            <gml:identifier codeSpace="0-20000-0-testblog">0-20000-0-testblog</gml:identifier>
-            <gml:name>Teststation_blog</gml:name>
+        <wmdr:ObservingFacility gml:id="_0-20000-0-teststationblog">
+            <gml:identifier codeSpace="0-20000-0-teststationblog">0-20000-0-teststationblog</gml:identifier>
+            <gml:name>Teststation Blog</gml:name>
             <wmdr:responsibleParty>
                 <wmdr:ResponsibleParty>
                     <wmdr:responsibleParty>
@@ -37,6 +37,21 @@
                     <wmdr:validPeriod>
                         <gml:TimePeriod gml:id="id-time_coord">
                             <gml:beginPosition>2019-03-01</gml:beginPosition>
+                            <gml:endPosition/>
+                        </gml:TimePeriod>
+                    </wmdr:validPeriod>
+                </wmdr:GeospatialLocation>
+            </wmdr:geospatialLocation>
+			<wmdr:geospatialLocation>
+                <wmdr:GeospatialLocation>
+                    <wmdr:geoLocation>
+                        <gml:Point gml:id="id-coord2">
+                            <gml:pos>46.224332 6.146441 375.0</gml:pos>
+                        </gml:Point>
+                    </wmdr:geoLocation>
+                    <wmdr:validPeriod>
+                        <gml:TimePeriod gml:id="id-time_coord2">
+                            <gml:beginPosition>2019-03-10</gml:beginPosition>
                             <gml:endPosition/>
                         </gml:TimePeriod>
                     </wmdr:validPeriod>
@@ -73,20 +88,20 @@
                 </wmdr:ProgramAffiliation>
             </wmdr:programAffiliation>
             <wmdr:observation>
-                <wmdr:ObservingCapability gml:id="id-obs2_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
+                <wmdr:ObservingCapability gml:id="id-obs1_stat">
+                    <wmdr:facility xlink:href="_0-20000-0-teststationblog"/>
                     <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
                     <wmdr:observation>
-                        <om:OM_Observation gml:id="id-obs2_geom">
+                        <om:OM_Observation gml:id="id-obs1_geom">
                             <om:type xlink:href="http://codes.wmo.int/wmdr/point"/>
                             <om:metadata>
                             </om:metadata>
                             <om:phenomenonTime/>
                             <om:resultTime/>
                             <om:procedure>
-<wmdr:Process gml:id="id-obs2_proc">
+<wmdr:Process gml:id="id-obs1_proc">
     <wmdr:deployment>
-        <wmdr:Deployment gml:id="id-obs2_dep1">
+        <wmdr:Deployment gml:id="id-obs1_dep1">
 		    <wmdr:dataGeneration/>
             <wmdr:validPeriod/>
             <wmdr:localReferenceSurface/>
@@ -97,7 +112,7 @@
     </wmdr:deployment>
 </wmdr:Process>
                             </om:procedure>
-                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/216"/>
+                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/251"/>
                             <om:featureOfInterest xsi:nil="true"/>
                             <om:result>
                             </om:result>
@@ -105,72 +120,6 @@
                     </wmdr:observation>
                 </wmdr:ObservingCapability>
             </wmdr:observation>
-            <wmdr:observation>
-                <wmdr:ObservingCapability gml:id="id-obs3_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
-                    <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
-                    <wmdr:observation>
-                        <om:OM_Observation gml:id="id-obs3_geom">
-                            <om:type xlink:href="http://codes.wmo.int/wmdr/point"/>
-                            <om:metadata>
-                            </om:metadata>
-                            <om:phenomenonTime/>
-                            <om:resultTime/>
-                            <om:procedure>
-<wmdr:Process gml:id="id-obs3_proc">
-    <wmdr:deployment>
-        <wmdr:Deployment gml:id="id-obs3_dep1">
-			<wmdr:dataGeneration/>
-            <wmdr:validPeriod/>
-            <wmdr:localReferenceSurface/>
-            <wmdr:applicationArea/>
-            <wmdr:sourceOfObservation/>
-            <wmdr:exposure/>
-        </wmdr:Deployment>
-    </wmdr:deployment>
-</wmdr:Process>
-                            </om:procedure>
-                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/224"/>
-                            <om:featureOfInterest xsi:nil="true"/>
-                            <om:result>
-                            </om:result>
-                        </om:OM_Observation>
-                    </wmdr:observation>
-                </wmdr:ObservingCapability>
-            </wmdr:observation>
-			<wmdr:observation>
-               <wmdr:ObservingCapability gml:id="id-obs4_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
-                    <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
-                    <wmdr:observation>
-                        <om:OM_Observation gml:id="id-obs4_geom">
-                            <om:type xlink:href="http://codes.wmo.int/wmdr/point"/>
-                            <om:metadata>
-                            </om:metadata>
-                            <om:phenomenonTime/>
-                            <om:resultTime/>
-                            <om:procedure>
-<wmdr:Process gml:id="id-obs4_proc">
-    <wmdr:deployment>
-        <wmdr:Deployment gml:id="id-obs4_dep1">
-			<wmdr:dataGeneration/>
-            <wmdr:validPeriod/>
-            <wmdr:localReferenceSurface/>
-            <wmdr:applicationArea/>
-            <wmdr:sourceOfObservation/>
-            <wmdr:exposure/>
-        </wmdr:Deployment>
-    </wmdr:deployment>
-</wmdr:Process>
-                            </om:procedure>
-                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/309"/>
-                            <om:featureOfInterest xsi:nil="true"/>
-                            <om:result>
-                            </om:result>
-                        </om:OM_Observation>
-                    </wmdr:observation>
-                </wmdr:ObservingCapability>
-            </wmdr:observation>			
         </wmdr:ObservingFacility>
     </wmdr:facility>
 </wmdr:WIGOSMetadataRecord>

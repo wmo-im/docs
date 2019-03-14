@@ -4,9 +4,9 @@
         <wmdr:Header/>
     </wmdr:headerInformation>
     <wmdr:facility>
-        <wmdr:ObservingFacility gml:id="_0-20000-0-testblog">
-            <gml:identifier codeSpace="0-20000-0-testblog">0-20000-0-testblog</gml:identifier>
-            <gml:name>Teststation_blog</gml:name>
+        <wmdr:ObservingFacility gml:id="_0-20000-0-teststationblog">
+            <gml:identifier codeSpace="0-20000-0-teststationblog">0-20000-0-teststationblog</gml:identifier>
+            <gml:name>Teststation Blog</gml:name>
             <wmdr:responsibleParty>
                 <wmdr:ResponsibleParty>
                     <wmdr:responsibleParty>
@@ -74,7 +74,7 @@
             </wmdr:programAffiliation>
             <wmdr:observation>
                 <wmdr:ObservingCapability gml:id="id-obs1_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
+                    <wmdr:facility xlink:href="_0-20000-0-teststationblog"/>
                     <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
                     <wmdr:observation>
                         <om:OM_Observation gml:id="id-obs1_geom">

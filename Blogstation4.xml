@@ -4,9 +4,9 @@
         <wmdr:Header/>
     </wmdr:headerInformation>
     <wmdr:facility>
-        <wmdr:ObservingFacility gml:id="_0-20000-0-testblog">
-            <gml:identifier codeSpace="0-20000-0-testblog">0-20000-0-testblog</gml:identifier>
-            <gml:name>Teststation_blog</gml:name>
+        <wmdr:ObservingFacility gml:id="_0-20000-0-teststationblog">
+            <gml:identifier codeSpace="0-20000-0-teststationblog">0-20000-0-teststationblog</gml:identifier>
+            <gml:name>Teststation Blog</gml:name>
             <wmdr:responsibleParty>
                 <wmdr:ResponsibleParty>
                     <wmdr:responsibleParty>
@@ -42,6 +42,21 @@
                     </wmdr:validPeriod>
                 </wmdr:GeospatialLocation>
             </wmdr:geospatialLocation>
+			<wmdr:geospatialLocation>
+                <wmdr:GeospatialLocation>
+                    <wmdr:geoLocation>
+                        <gml:Point gml:id="id-coord2">
+                            <gml:pos>46.224332 6.146441 375.0</gml:pos>
+                        </gml:Point>
+                    </wmdr:geoLocation>
+                    <wmdr:validPeriod>
+                        <gml:TimePeriod gml:id="id-time_coord2">
+                            <gml:beginPosition>2019-03-10</gml:beginPosition>
+                            <gml:endPosition/>
+                        </gml:TimePeriod>
+                    </wmdr:validPeriod>
+                </wmdr:GeospatialLocation>
+            </wmdr:geospatialLocation>
             <wmdr:facilityType xlink:href="http://codes.wmo.int/wmdr/landFixed"/>
 			<wmdr:dateEstablished>2019-03-01</wmdr:dateEstablished>
             <wmdr:wmoRegion xlink:href="http://codes.wmo.int/wmdr/europe"/>
@@ -72,78 +87,9 @@
                     </wmdr:reportingStatus>
                 </wmdr:ProgramAffiliation>
             </wmdr:programAffiliation>
-			
-            <wmdr:observation>
-                <wmdr:ObservingCapability gml:id="id-obs1_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
-                    <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
-                    <wmdr:observation>
-                        <om:OM_Observation gml:id="id-obs1_geom">
-                            <om:type xlink:href="http://codes.wmo.int/wmdr/point"/>
-                            <om:metadata>
-                            </om:metadata>
-                            <om:phenomenonTime/>
-                            <om:resultTime/>
-                            <om:procedure>
-<wmdr:Process gml:id="id-obs1_proc">
-    <wmdr:deployment>
-        <wmdr:Deployment gml:id="id-obs1_dep1">
-            <wmdr:dataGeneration>
-                <wmdr:DataGeneration gml:id="id-obs1_dep1_datag">
-                    <wmdr:validPeriod>
-                        <gml:TimePeriod gml:id="id-obs1-time_dep1">
-                            <gml:beginPosition>2019-03-01</gml:beginPosition>
-                            <gml:endPosition/>
-                        </gml:TimePeriod>
-                    </wmdr:validPeriod>
-					<wmdr:schedule>
-						<wmdr:Schedule>
-							<wmdr:startMonth>1</wmdr:startMonth>
-							<wmdr:endMonth>12</wmdr:endMonth>
-							<wmdr:startWeekday>1</wmdr:startWeekday>
-							<wmdr:endWeekday>7</wmdr:endWeekday>
-							<wmdr:startHour>0</wmdr:startHour>
-							<wmdr:endHour>23</wmdr:endHour>
-							<wmdr:startMinute>59</wmdr:startMinute>
-							<wmdr:endMinute>59</wmdr:endMinute>
-								<wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
-						</wmdr:Schedule>
-					</wmdr:schedule>
-					<wmdr:sampling>
-						<wmdr:Sampling>
-							<wmdr:samplingStrategy xlink:href="http://codes.wmo.int/common/wmdr/SamplingStrategy/continuous"/>
-						</wmdr:Sampling>
-					</wmdr:sampling>
-					<wmdr:reporting>
-						<wmdr:Reporting>
-							<wmdr:internationalExchange>true</wmdr:internationalExchange>
-							<wmdr:uom xlink:href="http://codes.wmo.int/common/unit/kg_kg-1"/>
-							<wmdr:temporalReportingInterval>PT3600S</wmdr:temporalReportingInterval>
-						</wmdr:Reporting>
-					</wmdr:reporting>
-                </wmdr:DataGeneration>
-            </wmdr:dataGeneration>		
-            <wmdr:validPeriod/>
-            <wmdr:localReferenceSurface/>
-            <wmdr:applicationArea/>
-            <wmdr:sourceOfObservation/>
-            <wmdr:exposure/>
-        </wmdr:Deployment>
-    </wmdr:deployment>
-</wmdr:Process>
-                            </om:procedure>
-                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/251"/>
-                            <om:featureOfInterest xsi:nil="true"/>
-                            <om:result>
-                            </om:result>
-                        </om:OM_Observation>
-                    </wmdr:observation>
-                </wmdr:ObservingCapability>
-            </wmdr:observation>
-			
             <wmdr:observation>
                 <wmdr:ObservingCapability gml:id="id-obs2_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
+                    <wmdr:facility xlink:href="_0-20000-0-teststationblog"/>
                     <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
                     <wmdr:observation>
                         <om:OM_Observation gml:id="id-obs2_geom">
@@ -156,41 +102,7 @@
 <wmdr:Process gml:id="id-obs2_proc">
     <wmdr:deployment>
         <wmdr:Deployment gml:id="id-obs2_dep1">
-            <wmdr:dataGeneration>
-                <wmdr:DataGeneration gml:id="id-obs2_dep1_datag">
-                    <wmdr:validPeriod>
-                        <gml:TimePeriod gml:id="id-obs2-time_dep1">
-                            <gml:beginPosition>2019-03-01</gml:beginPosition>
-                            <gml:endPosition/>
-                        </gml:TimePeriod>
-                    </wmdr:validPeriod>
-					<wmdr:schedule>
-						<wmdr:Schedule>
-							<wmdr:startMonth>1</wmdr:startMonth>
-							<wmdr:endMonth>12</wmdr:endMonth>
-							<wmdr:startWeekday>1</wmdr:startWeekday>
-							<wmdr:endWeekday>7</wmdr:endWeekday>
-							<wmdr:startHour>0</wmdr:startHour>
-							<wmdr:endHour>23</wmdr:endHour>
-							<wmdr:startMinute>59</wmdr:startMinute>
-							<wmdr:endMinute>59</wmdr:endMinute>
-								<wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
-						</wmdr:Schedule>
-					</wmdr:schedule>
-					<wmdr:sampling>
-						<wmdr:Sampling>
-							<wmdr:samplingStrategy xlink:href="http://codes.wmo.int/common/wmdr/SamplingStrategy/continuous"/>
-						</wmdr:Sampling>
-					</wmdr:sampling>
-					<wmdr:reporting>
-						<wmdr:Reporting>
-							<wmdr:internationalExchange>true</wmdr:internationalExchange>
-							<wmdr:uom xlink:href="http://codes.wmo.int/common/unit/hPa"/>
-							<wmdr:temporalReportingInterval>PT3600S</wmdr:temporalReportingInterval>
-						</wmdr:Reporting>
-					</wmdr:reporting>
-                </wmdr:DataGeneration>
-            </wmdr:dataGeneration>
+		    <wmdr:dataGeneration/>
             <wmdr:validPeriod/>
             <wmdr:localReferenceSurface/>
             <wmdr:applicationArea/>
@@ -210,7 +122,7 @@
             </wmdr:observation>
             <wmdr:observation>
                 <wmdr:ObservingCapability gml:id="id-obs3_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
+                    <wmdr:facility xlink:href="_0-20000-0-teststationblog"/>
                     <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
                     <wmdr:observation>
                         <om:OM_Observation gml:id="id-obs3_geom">
@@ -223,41 +135,7 @@
 <wmdr:Process gml:id="id-obs3_proc">
     <wmdr:deployment>
         <wmdr:Deployment gml:id="id-obs3_dep1">
-            <wmdr:dataGeneration>
-                <wmdr:DataGeneration gml:id="id-obs3_dep1_datag">
-                    <wmdr:validPeriod>
-                        <gml:TimePeriod gml:id="id-obs3-time_dep1">
-                            <gml:beginPosition>2019-03-01</gml:beginPosition>
-                            <gml:endPosition/>
-                        </gml:TimePeriod>
-                    </wmdr:validPeriod>
-					<wmdr:schedule>
-						<wmdr:Schedule>
-							<wmdr:startMonth>1</wmdr:startMonth>
-							<wmdr:endMonth>12</wmdr:endMonth>
-							<wmdr:startWeekday>1</wmdr:startWeekday>
-							<wmdr:endWeekday>7</wmdr:endWeekday>
-							<wmdr:startHour>0</wmdr:startHour>
-							<wmdr:endHour>23</wmdr:endHour>
-							<wmdr:startMinute>59</wmdr:startMinute>
-							<wmdr:endMinute>59</wmdr:endMinute>
-								<wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
-						</wmdr:Schedule>
-					</wmdr:schedule>
-					<wmdr:sampling>
-						<wmdr:Sampling>
-							<wmdr:samplingStrategy xlink:href="http://codes.wmo.int/common/wmdr/SamplingStrategy/continuous"/>
-						</wmdr:Sampling>
-					</wmdr:sampling>
-					<wmdr:reporting>
-						<wmdr:Reporting>
-							<wmdr:internationalExchange>true</wmdr:internationalExchange>
-							<wmdr:uom xlink:href="http://codes.wmo.int/common/unit/K"/>
-							<wmdr:temporalReportingInterval>PT3600S</wmdr:temporalReportingInterval>
-						</wmdr:Reporting>
-					</wmdr:reporting>
-                </wmdr:DataGeneration>
-            </wmdr:dataGeneration>
+			<wmdr:dataGeneration/>
             <wmdr:validPeriod/>
             <wmdr:localReferenceSurface/>
             <wmdr:applicationArea/>
@@ -277,7 +155,7 @@
             </wmdr:observation>
 			<wmdr:observation>
                <wmdr:ObservingCapability gml:id="id-obs4_stat">
-                    <wmdr:facility xlink:href="_0-20000-0-testblog"/>
+                    <wmdr:facility xlink:href="_0-20000-0-teststationblog"/>
                     <wmdr:programAffiliation xlink:href="http://codes.wmo.int/wmdr/GOS"/>
                     <wmdr:observation>
                         <om:OM_Observation gml:id="id-obs4_geom">
@@ -290,41 +168,7 @@
 <wmdr:Process gml:id="id-obs4_proc">
     <wmdr:deployment>
         <wmdr:Deployment gml:id="id-obs4_dep1">
-            <wmdr:dataGeneration>
-                <wmdr:DataGeneration gml:id="id-obs4_dep1_datag">
-                    <wmdr:validPeriod>
-                        <gml:TimePeriod gml:id="id-obs4-time_dep1">
-                            <gml:beginPosition>2019-03-01</gml:beginPosition>
-                            <gml:endPosition/>
-                        </gml:TimePeriod>
-                    </wmdr:validPeriod>
-					<wmdr:schedule>
-						<wmdr:Schedule>
-							<wmdr:startMonth>1</wmdr:startMonth>
-							<wmdr:endMonth>12</wmdr:endMonth>
-							<wmdr:startWeekday>1</wmdr:startWeekday>
-							<wmdr:endWeekday>7</wmdr:endWeekday>
-							<wmdr:startHour>0</wmdr:startHour>
-							<wmdr:endHour>23</wmdr:endHour>
-							<wmdr:startMinute>59</wmdr:startMinute>
-							<wmdr:endMinute>59</wmdr:endMinute>
-								<wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
-						</wmdr:Schedule>
-					</wmdr:schedule>
-					<wmdr:sampling>
-						<wmdr:Sampling>
-							<wmdr:samplingStrategy xlink:href="http://codes.wmo.int/common/wmdr/SamplingStrategy/continuous"/>
-						</wmdr:Sampling>
-					</wmdr:sampling>
-					<wmdr:reporting>
-						<wmdr:Reporting>
-							<wmdr:internationalExchange>true</wmdr:internationalExchange>
-							<wmdr:uom xlink:href="http://codes.wmo.int/common/unit/m_s-1"/>
-							<wmdr:temporalReportingInterval>PT3600S</wmdr:temporalReportingInterval>
-						</wmdr:Reporting>
-					</wmdr:reporting>
-                </wmdr:DataGeneration>
-            </wmdr:dataGeneration>
+			<wmdr:dataGeneration/>
             <wmdr:validPeriod/>
             <wmdr:localReferenceSurface/>
             <wmdr:applicationArea/>
