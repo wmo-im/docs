@@ -173,68 +173,6 @@
                 <wmdr:DataGeneration gml:id="id-obs2_dep1_datag">
                     <wmdr:validPeriod>
                         <gml:TimePeriod gml:id="id-obs2-time_dep1">
-                            <gml:beginPosition>2019-03-01</gml:beginPosition>
-                            <gml:endPosition>2019-03-14</gml:endPosition>
-                        </gml:TimePeriod>
-                    </wmdr:validPeriod>
-					<wmdr:schedule>
-						<wmdr:Schedule>
-							<wmdr:startMonth>1</wmdr:startMonth>
-							<wmdr:endMonth>12</wmdr:endMonth>
-							<wmdr:startWeekday>1</wmdr:startWeekday>
-							<wmdr:endWeekday>7</wmdr:endWeekday>
-							<wmdr:startHour>0</wmdr:startHour>
-							<wmdr:endHour>23</wmdr:endHour>
-							<wmdr:startMinute>59</wmdr:startMinute>
-							<wmdr:endMinute>59</wmdr:endMinute>
-								<wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
-						</wmdr:Schedule>
-					</wmdr:schedule>
-					<wmdr:sampling>
-						<wmdr:Sampling>
-							<wmdr:samplingStrategy xlink:href="http://codes.wmo.int/common/wmdr/SamplingStrategy/continuous"/>
-						</wmdr:Sampling>
-					</wmdr:sampling>
-					<wmdr:reporting>
-						<wmdr:Reporting>
-							<wmdr:internationalExchange>true</wmdr:internationalExchange>
-							<wmdr:uom xlink:href="http://codes.wmo.int/common/unit/hPa"/>
-							<wmdr:temporalReportingInterval>PT3600S</wmdr:temporalReportingInterval>
-						</wmdr:Reporting>
-					</wmdr:reporting>
-                </wmdr:DataGeneration>
-            </wmdr:dataGeneration>
-            <wmdr:validPeriod/>
-            <wmdr:localReferenceSurface/>
-            <wmdr:applicationArea/>
-            <wmdr:sourceOfObservation/>
-            <wmdr:exposure/>
-        </wmdr:Deployment>
-    </wmdr:deployment>
-</wmdr:Process>
-                            </om:procedure>
-                            <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/216"/>
-                            <om:featureOfInterest xsi:nil="true"/>
-                            <om:result>
-                            </om:result>
-                        </om:OM_Observation>
-                    </wmdr:observation>
-					
-					<wmdr:observation>
-                        <om:OM_Observation gml:id="id-obs2_dep2_geom">
-                            <om:type xlink:href="http://codes.wmo.int/wmdr/point"/>
-                            <om:metadata>
-                            </om:metadata>
-                            <om:phenomenonTime/>
-                            <om:resultTime/>
-                            <om:procedure>
-<wmdr:Process gml:id="id-obs2_dep2_proc">
-    <wmdr:deployment>
-        <wmdr:Deployment gml:id="id-obs2_dep2">
-            <wmdr:dataGeneration>
-                <wmdr:DataGeneration gml:id="id-obs2_dep2_datag">
-                    <wmdr:validPeriod>
-                        <gml:TimePeriod gml:id="id-obs2-time_dep2">
                             <gml:beginPosition>1970-01-01</gml:beginPosition>
                             <gml:endPosition>2019-02-28</gml:endPosition>
                         </gml:TimePeriod>
@@ -278,7 +216,7 @@
                             <om:observedProperty xlink:href="http://codes.wmo.int/wmdr/216"/>
                             <om:featureOfInterest xsi:nil="true"/>
                             <om:result>
-                            </om:result>
+                            </om:result>					
                         </om:OM_Observation>
                     </wmdr:observation>
                 </wmdr:ObservingCapability>
